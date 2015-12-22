@@ -1,0 +1,16 @@
+function [ traj, times, k ] = gradientDescent(n , x0, f, gradf,   eta, ep, maxIter)
+traj = zeros(maxIter, n);
+times = zeros(maxIter, 1);
+x = x0;
+n = norm(gradf(x));
+k = 1;
+eta = 0.9;
+while( n^2 > ep && k < maxIter)
+    traj(k,:) = x';
+    %[eta, funcCalls(k+1)] =   blts( x, 1.0, alpha, etaMultiplier, f, gradf, -gradf(x) );
+    x = x - eta*gradf(x);
+    n = norm(gradf(x));
+    k = k+1;
+end
+end
+
