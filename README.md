@@ -3,20 +3,23 @@ This repository contains implementations of various convex optimization algorith
 
 # Algorithms
 
-# Smooth and Strongly Convex
+# Basic Gradient Descent Methods
 	--Gradient Descent
 	  	-- Fixed Step Size
 	  	-- Backtracking Line Search
 	  	-- Exact Line Search
   	--Coordinate Gradient Descent
   	--Steepest Descent
+  	
+# Newton/ Quasi-Newton Methods
   	--Newton's Method
-  	--Interior Point Method
+  		--Interior Point Method
+  		--Conjugate Gradient Method
   	--Quasi-Newton Methods
   		-- BFGS
   		-- LBFGS
 
-# Smooth/Not Smooth and/or Strongly Convex/Not Strongly Convex
+# Advanced Methods
 	  Projected Gradient Descent -- Smooth
 	  Projected Sub-gradient Descent - Non Smooth & Lipschitz(bounded gradient descent)
 	  Proximal Gradient Descent (& Dual Proximal Gradient Descent) also known as ISTA -- Smooth + Simple Non Smooth
